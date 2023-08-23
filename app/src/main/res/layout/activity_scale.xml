@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    tools:context=".ScaleActivity">
+
+    <ScrollView
+        android:id="@+id/scrollParentScale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintParentScale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewParent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_scaleConversion"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:fontFamily="@font/almaroseboldd"
+                app:layout_constraintBottom_toBottomOf="@id/constraintParentScale"
+                app:layout_constraintTop_toTopOf="@id/constraintParentScale"
+                app:layout_constraintEnd_toEndOf="@id/constraintParentScale"
+                app:layout_constraintStart_toStartOf="@id/constraintParentScale"
+                app:layout_constraintVertical_bias="0.052"/>
+
+            <TextView
+                android:id="@+id/textViewParent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/txt_enterWeight"
+                android:fontFamily="@font/almaroseboldd"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/constraintParentScale"
+                app:layout_constraintStart_toStartOf="@+id/constraintParentScale"
+                app:layout_constraintBottom_toTopOf="@+id/enterWeight"
+                app:layout_constraintTop_toBottomOf="@+id/textViewParent1" />
+
+            <EditText
+                android:id="@+id/enterWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:hint="@string/txt_enterWeight"
+                android:fontFamily="@font/almaroseboldd"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/constraintParentScale"
+                app:layout_constraintStart_toStartOf="@+id/constraintParentScale"
+                app:layout_constraintBottom_toTopOf="@id/constraintRadio"
+                app:layout_constraintTop_toBottomOf="@+id/textViewParent2"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/constraintParentScale"
+                app:layout_constraintStart_toStartOf="@+id/constraintParentScale"
+                app:layout_constraintBottom_toTopOf="@+id/buttonEnterScale"
+                app:layout_constraintTop_toBottomOf="@+id/enterWeight">
+
+                <RadioGroup
+                    android:id="@+id/radioParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/constraintRadio"
+                    app:layout_constraintTop_toTopOf="@+id/constraintRadio"
+                    app:layout_constraintEnd_toEndOf="@id/constraintRadio"
+                    app:layout_constraintStart_toStartOf="@id/constraintRadio">
+
+                    <RadioButton
+                        android:id="@+id/tonRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rdBtn_Ton"
+                        android:fontFamily="@font/almaroseboldd"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:checked="true"
+                        android:focusable="true" />
+
+                    <RadioButton
+                        android:id="@+id/kgRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/rdBtn_Kg"
+                        android:fontFamily="@font/almaroseboldd"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:checked="true"
+                        android:focusable="true" />
+
+                    <RadioButton
+                        android:id="@+id/lbRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/rdBtn_Lb"
+                        android:fontFamily="@font/almaroseboldd"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:checked="true"
+                        android:focusable="true" />
+
+                </RadioGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEnterScale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/blue_sky"
+                android:text="@string/btnEnterWeight"
+                android:fontFamily="@font/almaroseboldd"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="@+id/constraintParentScale"
+                app:layout_constraintStart_toStartOf="@+id/constraintParentScale"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/constraintRadio"
+                app:layout_constraintHorizontal_bias="0.0"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/txt_resultWeight"
+                android:fontFamily="@font/almaroseboldd"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/constraintParentScale"
+                app:layout_constraintStart_toStartOf="@+id/constraintParentScale"
+                app:layout_constraintTop_toBottomOf="@+id/buttonEnterScale"
+                app:layout_constraintBottom_toTopOf="@+id/textViewResultScale"/>
+
+            <TextView
+                android:id="@+id/textViewResultScale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/almaroseboldd"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/constraintParentScale"
+                app:layout_constraintStart_toStartOf="@+id/constraintParentScale"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintParentScale"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

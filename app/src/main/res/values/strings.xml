@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alpha_App</string>
+    <string name="image_temperature">TemperatureConversion_Alpha</string>
+    <string name="temperature_conversion">Temperature Conversion</string>
+    <string name="enter_temperature">Enter temperature</string>
+    <string name="enterTemperature_editText">Enter temperature</string>
+    <string name="enter_type_temperature">Enter type temperature</string>
+    <string name="enterTypeTemperature_editText">Enter type temperature</string>
+    <string name="button_enter">Enter</string>
+    <string name="alpha_test">Alpha Test</string>
+    <string name="button_me">About Me</string>
+    <string name="alpha_app">Alpha App</string>
+    <string name="calculator">Calculator</string>
+    <string name="temperature">Temperature</string>
+    <string name="weight">Weight</string>
+    <string name="content_description">Iam a junior android developer who interested learning about new syntax, new function android and also interested learning dart with framework flutter for multiplatform app</string>
+    <string name="btn_clear">CLEAR</string>
+    <string name="btn_divide">/</string>
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btn_multiple">*</string>
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_decimal">.</string>
+    <string name="btn_0">0</string>
+    <string name="btn_delete">DEL</string>
+    <string name="btn_result">=</string>
+    <string name="txt_scaleConversion">Scale Conversion</string>
+    <string name="txt_enterWeight">Enter Weight</string>
+    <string name="rdBtn_Ton">Ton</string>
+    <string name="rdBtn_Kg">Kilogram</string>
+    <string name="rdBtn_Lb">Pound</string>
+    <string name="btnEnterWeight">Enter</string>
+    <string name="txt_resultWeight">Result</string>
+</resources>
