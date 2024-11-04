@@ -14,7 +14,7 @@
     <string name="calculator">Calculator</string>
     <string name="temperature">Temperature</string>
     <string name="weight">Weight</string>
-    <string name="content_description">Iam a junior android developer who interested learning about new syntax, new function android and also interested learning dart with framework flutter for multiplatform app</string>
+    <string name="content_description">I am a junior android developer who interested learning about new stack for native android like jetpack compose, kotlin multiplatform mobile and another language for native mobile like swift for IOS</string>
     <string name="btn_clear">CLEAR</string>
     <string name="btn_divide">/</string>
     <string name="btn_7">7</string>
@@ -40,4 +40,6 @@
     <string name="rdBtn_Lb">Pound</string>
     <string name="btnEnterWeight">Enter</string>
     <string name="txt_resultWeight">Result</string>
+    <string name="find_me_on_social_media">Find me on social media</string>
+    <string name="about_me">About Me</string>
 </resources>

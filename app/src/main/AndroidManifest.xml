@@ -21,18 +21,18 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-7974000105622544~7031445343"/>
 
+<!--        <activity-->
+<!--            android:name="com.test.alpha_App.SplashScreen"-->
+<!--            android:exported="true">-->
+<!--        </activity>-->
+
         <activity
-            android:name="com.test.alpha_App.SplashScreen"
+            android:name="com.test.alpha_App.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.test.alpha_App.HomeActivity"
-            android:exported="true">
         </activity>
 
         <activity
@@ -53,6 +53,12 @@
         <activity
             android:name="com.test.alpha_App.AboutActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="http" android:host="www.facebook.com/asyraf.rezpector.1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
         </activity>
 
     </application>
